@@ -1,0 +1,33 @@
+{
+  "name": "DiscordLinkValidator",
+  "version": "1.0.0",
+  "description": "Discord bot for checking for links/attachments",
+  "main": "./bin/index.js",
+  "author": "Daniel H Klein",
+  "scripts": {
+    "build:gulp": "gulp build",
+    "watch:gulp": "gulp watch",
+    "serve:gulp": "gulp serve",
+    "start:gulp": "gulp start",
+    "serve": "npm run serve:gulp -s",
+    "watch": "npm run watch:gulp -s",
+    "build": "npm run build:gulp -s",
+    "start": "npm run start:gulp -s"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "common-tags": "^1.8.0",
+    "discord.js": "^12.0.2",
+    "validate.js": "^0.13.1",
+    "winston": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.9.2",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-nodemon": "^2.5.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "typescript": "^3.8.3"
+  }
+}
