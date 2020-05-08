@@ -17,7 +17,7 @@ export class DiscordLinkValidator {
         // check if there's no attachment
         const attachments: any = message.attachments;
         if (attachments.size < 1) {
-          const content: string[] = message.content.split(' ');
+          const content: string[] = message.content.split(/\s+/);
           let index: number = 0
           let invalid: boolean = true;
           for ( ; index < content.length; index++) {
